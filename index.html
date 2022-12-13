@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">
+            <img src="resources/logo.png" alt="logo f1">
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="juegos.html" class="nav-link">JUEGOS</a>
+            <a href="contacto.html" class="nav-link">CONTACTO</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- VIDEO PRINCIPAL -->
+
+        <div class="main-video">
+            <div class="video">
+                <video id="1" src="resources/video1.mp4" controls muted></video>
+                <h3 class="title">Video 1</h3>
+            </div>
+        </div>
+
+        <!-- LISTA VIDEOS -->
+
+        <div class="video-list">
+            <div class="vid active">
+                <video id="1" src="resources/video1.mp4" muted></video>
+                <h3 class="title">Video 1</h3>
+            </div>
+            <div class="vid">
+                <video id="2" src="resources/video2.mp4" muted></video>
+                <h3 class="title">Video 2</h3>
+            </div>
+            <div class="vid">
+                <video id="3" src="resources/video3.mp4" muted></video>
+                <h3 class="title">Video 3</h3>
+            </div>
+            <div class="vid">
+                <video id="4" src="resources/video4.mp4" muted></video>
+                <h3 class="title">Video 4</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- VENTANA MODAL 1 -->
+
+    <section class="modal">
+        <div class="div_modal">
+            <h2 class="pregunta" id="pregunta">Pregunta</h2>
+            <button type="button" id="n0" class="btn_pregunta" onclick="cerrarVentanaModal1()">Respuesta 1</button>
+            <button type="button" id="n1" class="btn_pregunta" onclick="comprobarRespuesta(1)">Respuesta 2</button>
+            <button type="button" id="n2" class="btn_pregunta" onclick="comprobarRespuesta(2)">Respuesta 3</button>
+        </div>
+    </section>
+
+    <!-- VENTANA MODAL 2 -->
+
+    <section class="modal2">
+        <div class="div_modal">
+            <h2 class="pregunta" id="pregunta">Pregunta</h2>
+            <button type="button" id="n0" class="btn_pregunta" onclick="cerrarVentanaModal2()">SI</button>
+            <button type="button" id="n1" class="btn_pregunta" onclick="comprobarRespuesta(1)">NO</button>
+        </div>
+    </section>
+
+    <!-- VENTANA MODAL 3 -->
+
+    <section class="modal3">
+        <div class="div_modal">
+            <h2 class="pregunta" id="pregunta">Pregunta (introduce un numero)</h2>
+            <input type="text" required>
+            <button type="button" id="n0" class="btn_pregunta" onclick="cerrarVentanaModal3()">Enviar</button>
+        </div>
+    </section>
+
+    <!-- PRESENTACION -->
+
+    <section id="presentacion">
+        <div>
+            <h1>Descripción</h1>            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime molestiae aspernatur molestias dolorem? Voluptas autem eius obcaecati odit illum optio animi omnis, deserunt fugiat repellat totam nulla consequuntur quas.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptatibus molestiae, culpa eos totam maxime molestias. Aliquam, ullam. Sequi sit maiores asperiores velit rem maxime reiciendis repellendus fugit, ducimus atque?</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>Página web desarrollada para las prácticas de Multimedia 2022</p>        
+        <p>correo@alu.uclm.es</p>
+        <p>correo@alu.uclm.es</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
