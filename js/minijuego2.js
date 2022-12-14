@@ -16,7 +16,7 @@ pantallaInicio.addEventListener("click", () => {
 const empezar = () => {
 
     puntos = 0;
-    tiempo = 15;
+    tiempo = 30;
     necesarios = 15;
     document.getElementById("puntos").innerHTML = "Puntos: <b>" + puntos + "/" + necesarios + "  </b>";
     document.getElementById("tiempo").innerHTML = "&nbsp;&nbsp;&nbsp;Tiempo: " + tiempo;
