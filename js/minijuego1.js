@@ -105,7 +105,5 @@ pantallaClick.addEventListener("click", () => {
 });
 
 botonJugar.addEventListener("click", () => {
-    pantallaFinal.classList.remove("active");
-    init();
-    empezar();
+    window.location.href="minijuego1.html";
 });
