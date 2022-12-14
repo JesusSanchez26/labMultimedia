@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     font-family: 'Montserrat';
     font-weight: normal;
 }
@@ -131,7 +131,8 @@ nav a:hover {
 
 .modal,
 .modal2,
-.modal3, .modalfinal1 {
+.modal3,
+.modalfinal1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -162,11 +163,29 @@ nav a:hover {
 
 .ventana_modal,
 .ventana_modal2,
-.ventana_modal3, .ventana_modalfinal1{
+.ventana_modal3,
+.ventana_modalfinal1 {
     opacity: 1;
     pointer-events: unset;
     transition: opacity .6s;
 }
+
+.btn_pregunta {
+    width: 75%;
+    padding: 5px;
+
+}
+
+.btn_pregunta3 {
+    width: 25%;
+    padding: 5px;
+}
+
+.caja {
+    width: 75%;
+    padding: 5px;
+}
+
 
 #presentacion {
     background: rgba(0, 0, 0, .7);

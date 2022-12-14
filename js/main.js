@@ -16,6 +16,8 @@ let p7 = false;
 let p8 = false;
 let p9 = false;
 let p10 = false;
+let p11 = false;
+let p12 = false;
 
 let terminado = false;
 
@@ -36,18 +38,6 @@ opciones.push(["Congelación de unidades de potencia hasta 2025", "Se podrán de
 
 let posActual = 0;
 let acertadas = 0
-
-/*var pregunta1_respondida = new Boolean(false);
-var pregunta2_respondida = new Boolean(false);
-var pregunta3_respondida = new Boolean(false);
-var pregunta4_respondida = new Boolean(false);
-var pregunta5_respondida = new Boolean(false);
-var pregunta6_respondida = new Boolean(false);
-var pregunta7_respondida = new Boolean(false);
-var pregunta8_respondida = new Boolean(false);
-var pregunta9_respondida = new Boolean(false);
-var pregunta10_respondida = new Boolean(false);
-var terminado = new Boolean(false);*/
 
 function empezar(){
     posActual = 0;
@@ -123,9 +113,9 @@ listVideo.forEach(video => {
 // ---------- VENTANA MODAL VIDEO 1 ----------
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 41.15 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 41.00 && mainVideo.id == 1){
         p1 = false;
-    } else if (p1 == false && mainVideo.currentTime >= 41.15 /*&& mainVideo.currentTime() <= 42.00*/ && mainVideo.id == 1 ) {
+    } else if (p1 == false && mainVideo.currentTime >= 41.00 && mainVideo.currentTime < 42.00 && mainVideo.id == 1 ) {
         mainVideo.pause();   
         empezar();
         p1 = true;   
@@ -134,9 +124,9 @@ mainVideo.addEventListener("timeupdate", function () {
 });
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 82.5 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 82.00 && mainVideo.id == 1){
         p2 = false;
-    } else if (p2 == false && mainVideo.currentTime >= 82.5 && mainVideo.id == 1) {    
+    } else if (p2 == false && mainVideo.currentTime >= 82.00 && mainVideo.currentTime < 83.00 && mainVideo.id == 1) {    
         mainVideo.pause();
         p2 = true; 
         ventana_modal.classList.add('ventana_modal');
@@ -144,9 +134,9 @@ mainVideo.addEventListener("timeupdate", function () {
 });
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 118.5 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 118.00 && mainVideo.id == 1){
         p3 = false;
-    } else if (p3 == false && mainVideo.currentTime >= 118.5 && mainVideo.id == 1) {    
+    } else if (p3 == false && mainVideo.currentTime >= 118.00 && mainVideo.currentTime < 119.00 && mainVideo.id == 1) {    
         mainVideo.pause();
         p3 = true; 
         ventana_modal.classList.add('ventana_modal');
@@ -154,9 +144,9 @@ mainVideo.addEventListener("timeupdate", function () {
 });
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 202.8 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 202.00 && mainVideo.id == 1){
         p4 = false;
-    } else if (p4 == false && mainVideo.currentTime >= 202.8 && mainVideo.id == 1) {    
+    } else if (p4 == false && mainVideo.currentTime >= 202.00 && mainVideo.currentTime < 203.00 && mainVideo.id == 1) {    
         mainVideo.pause();
         p4 = true; 
         ventana_modal.classList.add('ventana_modal');
@@ -164,9 +154,9 @@ mainVideo.addEventListener("timeupdate", function () {
 });
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 234.85 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 234.00 && mainVideo.id == 1){
         p5 = false;
-    } else if (p5 == false && mainVideo.currentTime >= 234.85 && mainVideo.id == 1) {    
+    } else if (p5 == false && mainVideo.currentTime >= 234.00 && mainVideo.currentTime < 235.00 && mainVideo.id == 1) {    
         mainVideo.pause();
         p5 = true; 
         ventana_modal.classList.add('ventana_modal');
@@ -175,9 +165,9 @@ mainVideo.addEventListener("timeupdate", function () {
 
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 352.5 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 352.00 && mainVideo.id == 1){
         p6 = false;
-    } else if (p6 == false && mainVideo.currentTime >= 352.5 && mainVideo.id == 1) {    
+    } else if (p6 == false && mainVideo.currentTime >= 352.00 && mainVideo.currentTime < 353.00 && mainVideo.id == 1) {    
         mainVideo.pause();
         p6 = true; 
         ventana_modal.classList.add('ventana_modal');
@@ -185,9 +175,9 @@ mainVideo.addEventListener("timeupdate", function () {
 });
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 397 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 397.00 && mainVideo.id == 1){
         p7 = false;
-    } else if (p7 == false && mainVideo.currentTime >= 397 && mainVideo.id == 1) {    
+    } else if (p7 == false && mainVideo.currentTime >= 397.00 && mainVideo.currentTime < 398.00 && mainVideo.id == 1) {    
         mainVideo.pause();
         p7 = true; 
         ventana_modal.classList.add('ventana_modal');
@@ -195,9 +185,9 @@ mainVideo.addEventListener("timeupdate", function () {
 });
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 470.25 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 470.00 && mainVideo.id == 1){
         p8 = false;
-    } else if (p8 == false && mainVideo.currentTime >= 470.25 && mainVideo.id == 1) {    
+    } else if (p8 == false && mainVideo.currentTime >= 470.00 && mainVideo.currentTime < 471.00 && mainVideo.id == 1) {    
         mainVideo.pause();
         p8 = true; 
         ventana_modal.classList.add('ventana_modal');
@@ -205,9 +195,9 @@ mainVideo.addEventListener("timeupdate", function () {
 });
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 509.25 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 509.00 && mainVideo.id == 1){
         p9 = false;
-    } else if (p9 == false && mainVideo.currentTime >= 509.25 && mainVideo.id == 1) {    
+    } else if (p9 == false && mainVideo.currentTime >= 509.00 && mainVideo.currentTime < 510.00 && mainVideo.id == 1) {    
         mainVideo.pause();
         p9 = true; 
         ventana_modal.classList.add('ventana_modal');
@@ -215,9 +205,9 @@ mainVideo.addEventListener("timeupdate", function () {
 });
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 545.35 && mainVideo.id == 1){
+    if (mainVideo.currentTime < 545.00 && mainVideo.id == 1){
         p10 = false;
-    } else if (p10 == false && mainVideo.currentTime >= 545.35 && mainVideo.id == 1) {    
+    } else if (p10 == false && mainVideo.currentTime >= 545.00 && mainVideo.currentTime < 546.00 && mainVideo.id == 1) {    
         mainVideo.pause();
         p10 = true; 
         ventana_modal.classList.add('ventana_modal');
@@ -246,10 +236,10 @@ function enviarRespuesta1() {
 // ---------- VENTANA MODAL VIDEO 2 ----------
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 4 && mainVideo.id == 2){
-        p1 = true;
-    } else if (p1 && mainVideo.currentTime >= 4 && mainVideo.id == 2) {
-        p1 = false;        
+    if (mainVideo.currentTime < 4.00 && mainVideo.id == 2){
+        p11 = true;
+    } else if (p11 && mainVideo.currentTime >= 4.00 && mainVideo.currentTime < 5.00 && mainVideo.id == 2) {
+        p11 = false;        
         mainVideo.pause();
         ventana_modal2.classList.add('ventana_modal2');
     }
@@ -263,10 +253,10 @@ function cerrarVentanaModal2() {
 // ---------- VENTANA MODAL VIDEO 3 ----------
 
 mainVideo.addEventListener("timeupdate", function () {
-    if (mainVideo.currentTime < 4 && mainVideo.id == 3){
-        p1 = true;
-    } else if (p1 && mainVideo.currentTime >= 4 && mainVideo.id == 3) {
-        p1 = false;
+    if (mainVideo.currentTime < 4.00 && mainVideo.id == 3){
+        p12 = true;
+    } else if (p12 && mainVideo.currentTime >= 4.00 && mainVideo.currentTime < 5.00 && mainVideo.id == 3) {
+        p12 = false;
         console.log(mainVideo.id)
         mainVideo.pause();
         ventana_modal3.classList.add('ventana_modal3');
@@ -277,15 +267,3 @@ function cerrarVentanaModal3() {
     ventana_modal3.classList.remove('ventana_modal3');
     mainVideo.play()
 }
-
-
-// function pregunta(tiempoPregunta, pX, id) {
-//     if(mainVideo.currentTime < tiempoPregunta) {
-//         pX = true;
-//     } else if (pX && mainVideo.currentTime >= tiempoPregunta && mainVideo.id == id){
-//         pX = false;
-//         console.log(mainVideo.id)
-//         mainVideo.pause();
-//         ventana_modal.classList.add('ventana_modal');
-//     }
-// }
