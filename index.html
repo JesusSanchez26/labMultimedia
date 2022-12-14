@@ -66,9 +66,19 @@
     <section class="modal">
         <div class="div_modal">
             <h2 class="pregunta" id="pregunta">Pregunta</h2>
-            <button type="button" id="n0" class="btn_pregunta" onclick="cerrarVentanaModal1()">Respuesta 1</button>
+            <button type="button" id="n0" class="btn_pregunta" onclick="comprobarRespuesta(0)">Respuesta 1</button>
             <button type="button" id="n1" class="btn_pregunta" onclick="comprobarRespuesta(1)">Respuesta 2</button>
             <button type="button" id="n2" class="btn_pregunta" onclick="comprobarRespuesta(2)">Respuesta 3</button>
+        </div>
+    </section>
+
+     <!-- VENTANA MODAL FINAL 1 -->
+
+     <section class="modalfinal1">
+        <div class="div_modal">
+            <h2 class="pregunta" id="pregunta">Puntuación</h2>
+            <p>Has acertado <span id="aciertos" class="aciertos">Aciertos</span> de <span id= "total">Total</span></p>
+            <button type="button" class="btn_pregunta" onclick="cerrarVentanaModalFinal1()">Cerrar</button>
         </div>
     </section>
 
