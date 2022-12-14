@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*text-transform: capitalize;*/
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
+body {
+    background: #eee;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background: rgba(0, 0, 0, .9);        
+    padding: 10px;    
+    width: 100%;
+    z-index: 100;    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 40px;
+    width: 40px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0px 15px;    
+    transition: .5s;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ee0000;
+}
+
+.container{
+    padding: 0px;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: #ffb;
+    border: 8px dashed rgb(41, 38, 38);
+    /*margin-top: 50px;*/
+}
+
+.pointer{
+    background-color: #444;
+    height: 53px;
+    margin-top: 30px;
+    border-bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+
+#player {
+    background-color: #ee0000;
+    border: 4px dashed #b22;
+    width: 50px;
+    height: 50px;
+    border-radius: 29px;
+    position: absolute;
+   /* transition: all 0.3;*/
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;    
+    margin: 5px;
+    font-size: 12px;
+}
