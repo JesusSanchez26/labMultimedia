@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minijuego 1</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="minijuego1.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">
+            <img src="resources/logo.png" alt="logo f1">
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="juegos.html" class="nav-link">JUEGOS</a>
+            <a href="contacto.html" class="nav-link">CONTACTO</a>
+        </nav>
+    </header>
+
+
+    <!-- PANTALLA PRINCIPAL -->
+
+    <div class="inicio active">
+        <div class="container">
+            <h1>Tiempo de reacción</h1>
+            <p>Click cuando veas el color verde</p>
+            <p>Click en cualquier lugar para comenzar</p>
+        </div>
+    </div>
+
+    <!-- PANTALLA CLICK -->
+
+    <div class="click">
+        <div class="mensaje">¡YA!</div>
+    </div>
+
+    <!-- PANTALLA FINAL -->
+
+    <div class="final">
+        <div class="container">
+            <h1>Tiempo medio de reacción</h1>
+            <div class="tiempo"></div>
+            <button class="boton">Jugar de nuevo</button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="minijuego1.js"></script>
+
+</body>
+
+</html>
