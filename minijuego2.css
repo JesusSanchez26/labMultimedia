@@ -57,8 +57,8 @@ nav a:hover {
 .container{
     padding: 0px;
     margin: auto;
-    width: 500px;
-    height: 500px;
+    width: 575px;
+    height: 575px;
     background-color: #ffb;
     border: 8px dashed rgb(41, 38, 38);
     /*margin-top: 50px;*/
