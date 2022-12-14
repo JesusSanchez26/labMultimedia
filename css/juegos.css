@@ -10,7 +10,7 @@
 }
 
 body {
-    background: #eee;
+    background: #ddd;
 }
 
 header {
@@ -54,39 +54,35 @@ nav a:hover {
     color: #ee0000;
 }
 
-.container{
-    padding: 0px;
-    margin: auto;
-    width: 575px;
-    height: 575px;
-    background-color: #ffb;
-    border: 8px dashed rgb(41, 38, 38);
-    /*margin-top: 50px;*/
+.fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
+    margin: 100px auto;
 }
 
-.pointer{
-    background-color: #444;
-    height: 53px;
-    margin-top: 30px;
-    border-bottom: 0px;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px 0px;
+.fila .minijuego{
+    width: 250px;
+    height: 250px;
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: .5s;
+    text-decoration: none;
+    color: #333;
 }
 
-
-
-#player {
-    background-color: #ee0000;
-    border: 4px dashed #b22;
-    width: 50px;
-    height: 50px;
-    border-radius: 29px;
-    position: absolute;
-   /* transition: all 0.3;*/
+.fila .minijuego:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
 }
 
+.fila .minijuego img {
+    height: 80px;
+    width: 80px;
+}
 
 footer {
     background-color: #000;
